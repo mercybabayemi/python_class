@@ -1,3 +1,3 @@
-Print(Github is an interesting platform)
+Print("Github is an interesting platform")
 
-Print(My name is Mercy)
+Print("My name is Mercy")
