@@ -1,0 +1,7 @@
+Pseudocode areaofcircle
+- Prompt user to enter the radius of a circle
+- Collect input 
+- Store as 'radius
+- Calculate the area of the circle with: 
+	3.142 * radius ** 2
+- Display result
