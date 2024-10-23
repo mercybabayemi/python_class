@@ -1,0 +1,16 @@
+value = ord ('B')
+
+value1 = ord ('C')
+value2 = ord ('D')
+value3 = ord ('b')
+value4 = ord ('c')
+value5 = ord ('d')
+value6 = ord ('0')
+value7 = ord ('1')
+value8 = ord ('2')
+value9 = ord ('$')
+value10 = ord ('*')
+value11 = ord ('+')
+value12 = ord (' ')
+
+print(value, value1, value2, value3, value4, value5, value6, value7, value8, value9, value10, value11, value12)

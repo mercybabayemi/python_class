@@ -1,0 +1,7 @@
+Pseudo code computing Converttopound
+
+- prompt user to enter number in pounds
+- collect and store as number
+- multiply number by 0.454 
+- Collect and store as result
+- Display result

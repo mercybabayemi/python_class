@@ -1,0 +1,4 @@
+Pseudocode binary number
+- Prompt user to enter number in pounds
+- convert to kilogram with number *0.454
+- Display result

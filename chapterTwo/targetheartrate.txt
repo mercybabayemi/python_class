@@ -1,0 +1,13 @@
+age = int (input("Enter your age: "))
+
+maximum_heart_rate = 220 - age
+
+PERCENTAGE_CONVERTER = 1 / 100
+
+lower_range = (50 * PERCENTAGE_CONVERTER) * maximum_heart_rate
+
+maximum_range = (85 * PERCENTAGE_CONVERTER) * maximum_heart_rate
+
+print(f"Your  maximum heart rate is {maximum_heart_rate}.")
+
+print(f"Your  target heart rate is within the range of {lower_range} to {maximum_range}.")
