@@ -1,0 +1,11 @@
+Pseudocode PositiveAndNegativeNumber
+prompt user to enter a number 
+determine whether the number is positive or negative
+display result
+
+stage 2
+prompt user to enter a number
+collect it 
+store as number
+determine whether the number is positive or negative 
+display result

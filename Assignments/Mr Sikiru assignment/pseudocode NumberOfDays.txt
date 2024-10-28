@@ -1,0 +1,8 @@
+pseudocode NumberOfDays
+prompt user to input a month number 
+collect it
+save as 'month'
+prompt user to input a year
+collect it
+save as 'year'
+display result

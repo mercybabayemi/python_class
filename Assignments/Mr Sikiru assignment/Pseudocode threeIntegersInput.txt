@@ -1,0 +1,29 @@
+Pseudocode threeIntegersInput
+Stage 1
+
+Accept three integers from users
+
+return true if two or more have the same rightmost digit
+
+The integers are non negative
+
+Stage 2
+
+prompt user to enter first number
+
+collect and store as 'firstNumber'
+
+prompt user to enter second number
+
+collect and store as 'secondNumber'
+
+prompt user to enter third number
+
+collect and store as 'thirdNumber'
+
+Extract numbers with % 10
+
+if true that two result match, print the result is true
+else false
+
+display result

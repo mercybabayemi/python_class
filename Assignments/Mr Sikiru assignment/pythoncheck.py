@@ -11,8 +11,3 @@ print("Python version: ", version)
 home = os.path.dirname(sys.executable)
 print("Python Home: ", home)
 
-vendorUrl = platform.vendor_info()
-print("Python Class Path: ", vendorUrl)
-
-classPath = platform.vendor_info()
-print("Python Class Path: ", classPath)

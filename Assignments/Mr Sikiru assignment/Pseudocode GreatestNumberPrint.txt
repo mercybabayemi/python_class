@@ -1,0 +1,17 @@
+Pseudocode GreatestNumberPrint
+
+prompt user to enter first number
+
+collect and store as 'firstNumber'
+
+prompt user to enter second number
+
+collect and store as 'secondNumber'
+
+prompt user to enter third number
+
+collect and store as 'thirdNumber'
+
+Determine if number is the greatest 
+
+display result for greatest

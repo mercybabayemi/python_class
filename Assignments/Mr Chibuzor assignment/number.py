@@ -2,8 +2,7 @@ number = 0
 largestNumber = 0
 smallestNumber = 0
 	
-
-while True:
+while true:
     userInput = int(input("Enter number: "))
 		
 

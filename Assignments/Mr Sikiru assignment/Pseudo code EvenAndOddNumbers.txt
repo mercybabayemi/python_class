@@ -1,0 +1,21 @@
+Pseudo code EvenAndOddNumbers
+stage 1
+prompt user to enter a number
+
+check if number is even or odd
+
+print 1 if it is even or 0 if odd
+
+display result
+
+stage 2
+
+prompt user to enter a number
+
+collect it and store as 'number'
+
+check if number is even or odd
+
+print 1 if it is even or 0 if odd
+
+display result

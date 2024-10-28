@@ -1,0 +1,49 @@
+Pseudo code Financial application
+Stage 1
+prompt user to enter investment amount
+
+prompt user to enter annual interest rate
+
+prompt user to enter number of years
+
+calculate future investment value with investmentamount * ( 1 + annual interest rate) ^ number of years
+
+Display future investment value
+
+Stage 2
+
+prompt user to enter investment amount
+
+collect it
+
+store as 'investmentAmount'
+
+prompt user to enter annual interest rate
+
+collect it
+
+store as 'annualInterest'
+
+divide annual interest by 100 
+
+collect it
+
+store as monthlyInterestRate
+
+prompt user to enter number of years
+
+collect it
+
+store as 'years'
+
+calculate future investment value with investmentamount * ( 1 + annual interest rate) ^ years
+
+calculate monthly interest rate with annualInterestRate / 12
+
+collect it
+
+store as 'monthlyInterestRate'
+
+store as 'futureInvestmentValue'
+
+Display 'futureInvestmentValue'
