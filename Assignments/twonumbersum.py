@@ -1,9 +1,9 @@
 sum = 0
 counter = 1
 stop = -1
-
-while counter <= 2:
-	number = int(input("Enter number or -1 to terminate: "))
+number = 0
+while number != -1:
+	number = int(input("Enter number (press-1 to terminate): "))
 
 	sum = sum + number
 	counter = counter + 1
