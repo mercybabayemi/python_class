@@ -1,0 +1,12 @@
+Pseudo code Miles per gallon
+- Sentinel controlled loop
+- Prompt user to enter miles driven
+- Collect and store as miles 
+- Prompt user to enter gallons used for each tankful
+- Collect and store as gallons 
+- Calculate miles per gallon with miles divided by gallons
+- collect and as miles per gallon
+- Display result
+- Sum total miles 
+- sum total gallons
+- Calculate overall average miles with total miles divided by total gallons
