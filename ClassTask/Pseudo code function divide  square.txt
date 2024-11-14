@@ -1,0 +1,17 @@
+Pseudo code function divide / square
+Test: 
+test if function exist
+test if function returns correct value
+test if function raise exception with invalid input
+test if negative numbers return correct value
+test if function receive correct value with float.
+test if function return correct value with string integer
+test if function returns
+
+Function: 
+stage 1
+If number is divisible by 5, return squareroot;
+Else return remainder of number divided by 5.
+If argument = 10, return 3.16 as squareroot
+
+stage 2

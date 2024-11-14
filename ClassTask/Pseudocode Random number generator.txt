@@ -1,0 +1,8 @@
+Pseudocode Random number generator
+-import random function
+-declare iteration
+-staterandom
+-sum 5 numbers
+-product of 3 
+-subtract two
+-
