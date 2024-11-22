@@ -1,3 +1,4 @@
 def get_sorted_lenght(words):
-	for item in words:
-		len(item).sort()
+	sorted_list = sorted(words,key = len)
+	return sorted_list
+	
