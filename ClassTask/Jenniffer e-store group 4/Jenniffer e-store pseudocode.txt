@@ -1,0 +1,44 @@
+Jenniffer e-store pseudocode
+
+- prompt user to select from the menu.
+Welcome to Jennifer's E-Store! 
+1. View Products 
+2. Add to Cart 
+3. Remove from Cart 
+4. View Cart 
+5. Checkout 
+6. Exit 
+- collect and store as menu
+
+- if user enters 1 for menu, display product catalogue.
+- create a function for this and call it get_view_product.
+1. Laptop - $1000
+2. Phone - $500
+3. Headphones - $100
+- create a function for this and call it get_view_product.
+
+-  create a function: add_to_cart(cart, products) 
+- Add product to shopping cart
+- Confirm addition with "(product) has been added to your cart."
+
+- create a function: remove_from_cart(cart)
+- remove item
+- confirm removal with "(product) have been removed from your cart"
+
+- create a function view_cart(cart)
+- display all item with prices
+- display error message or "your cart is currently empty" if an item is not found or cart empty
+
+- create a function calculate_total(cart)
+- loop through cart
+- calculate total price of all items
+- return total amount
+- create a function checkout(cart) 
+- display total amount to the customer
+- clear the cart after check
+- display " thank you for shopping with us your total is $(total)"
+
+- function to go back to last menu or main menu
+- default at exit 
+
+
