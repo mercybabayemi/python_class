@@ -45,23 +45,27 @@ def add_to_cart():
 def remove_from_cart():
 	for index in range(len(cart[0])):
 		print(f"{index + 1}.{cart[0][index]}")
-	user_input = int(input("Enter a number value: "))
-
-	if len(cart) > 1:
+	user_input = int(input("Enter 1 to remove item from cart\nEnter 2 to return to main menu\nEnter 3 to exit : "))
+	if user_input == 1 or len(cart) == 0:
+		print("No item to remove from cart.\nAdd items to your cart!!!")
+		main_menu()
+	elif user_input == 1 or len(cart) >= 1:
 		removed = cart[0].pop([0][user_input - 1])
 		cart[1].pop([0][user_input - 1])
 		print(f"{removed} have been removed from your cart!!!")
 		main_menu()
-	else:
-		print("No index")
+	if user_input == 2:
 		main_menu()
+	if user_input == 3:
+		exit()
+	
 def view_cart():
 	for index in range(len(cart)):
 		print(f"{index + 1}.{cart[0][index]}  {cart[1][index]}")
 	user_input = int(input("Do you want to checkout?\nPress 1 for yes.\nPress 2 to go back to main menu: "))
-	if response == 1:
+	if user_input == 1:
 		check_out()
-	elif response == 2:
+	elif user_input == 2:
 		main_menu()
 	else:
 		print("Invalid input!! Returning to main menu....")
