@@ -1,8 +1,0 @@
-Pseudo code for vowels.
-
-- Initialize vowels
-- Initialize vowels count
-- Loop for the letters in words
-- Determine if letters is in words
-- Define and prompt for input
-- Call function

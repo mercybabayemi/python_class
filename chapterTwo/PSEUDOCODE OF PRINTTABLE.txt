@@ -1,0 +1,18 @@
+PSEUDOCODE OF PRINTTABLE
+Stage 1
+- Declare class
+- Declare main methods
+- Print header
+- Initialize header
+- Iterate condition and statement for 'a', 'b' and pow
+- Display results
+
+Stage 2
+- Declare class
+- Declare main methods
+- Print header
+- Initialize header
+- iterate condition and statement for 'a'
+- iterate condition and statement for 'b' 
+- iterate condition and statement for pow
+- Display results

@@ -11,3 +11,7 @@ class TestNumberFunction(TestCase):
 		actual = stringpalindrome.is_palindrome(input)
 		expected = True
 		self.assertEqual(actual, expected)
+		input = "ollo"
+		actual = stringpalindrome.is_palindrome(input)
+		expected = True
+		self.assertEqual(actual, expected)

@@ -1,0 +1,21 @@
+#PalindromeInteger
+
+number = int(input("Enter a number between 0 to 1000:"))
+
+
+firstNumber = number % 10
+
+secondTrial = number / 10
+secondNumber = secondTrial % 10
+
+thirdNumber = number / 100 
+
+print(firstnumber, secondNumber, thirdNumber) 
+
+
+
+if firstNumber != thirdNumber:
+    print(f"Integer is not a palindrome integer")
+	
+elif firstNumber == thirdNumber:
+    print(f"Integer is a palindrome integer")

@@ -1,5 +1,0 @@
-Pseudo code
-Display graph 
-- Collect and read five numbers between 1 and 30
--Display the same number of adjacent asterisks.
-- Display the bars of asterisks after reading all five numbers
