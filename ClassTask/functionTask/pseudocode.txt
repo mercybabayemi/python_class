@@ -1,0 +1,21 @@
+pseudocode for function that takes a list and return boolean value
+- initialize an empty list to result
+- iterate over integer for each item 
+- calculate if item % 2 is equal 0, return true appended to result
+- else append false to result
+
+pseudocode for function that takes two parameter and move index of elements
+- initialize first parameter list to x
+- initialize second parameter value to y
+- initialize mainNumber to x 
+- initialize  x to x[0:y] to get first elements of list
+- initialize mainnumber to mainnumber[y:] to get the second half of list
+- add the first elements from the back with mainnumber.extend(x)
+
+Pseudocode for function that takes one list output and returns two list in a list.
+- initialize parameter to second 
+- initialize element to 3
+- initialize parameter to slice first list with element [0:element]
+- initialize second to slice second half with second[element:]
+- return nested parameter arguement and second
+

@@ -1,0 +1,8 @@
+Pseudocode for acronym
+
+- initialize an empty string
+- For characters in  word
+- remove first index and add to empty string
+- return
+- define userinput 
+- print result
