@@ -1,0 +1,48 @@
+Pseudocode SEMICOLON STORES Checkout App
+
+
+1. Enter each product details in the user's cart - product and quantity purchased.
+- Create a function to display questions and receive user's input
+- prompt for product that user wants to buy
+- prompt for pieces of product
+- prompt for price per unit of product 
+- ask whether user wants to purchase other items or continue to checkout
+- repeat process from " what product did user buy?" if yes
+- prompt for cashier's name if no
+- proceed to the calculated discount user will get
+
+2. Display customer's invoice, create a function for calculation
+In a tabular format, print 
+
+- Print store name 
+- Print branch
+- print location 
+- print telephone
+- print date
+- prompt for cashier's name
+- print cashier's name
+- prompt for customers name 
+- collect and save as name 
+- print customer's name
+
+- print header of item, quantity, price and total
+- display item, quantity per unit, price and total of price multiplied by the quantity.
+- proceed to the calculated subtotal calculated 
+- proceed to the calculated discount
+- proceed to the calculated vat @ 17.50%
+- proceed to the calculated bill total 
+- print " This is not a receipt, kindly pay {total}"
+
+ 
+- display function for calculation
+- Get how much customer gave to customer, if less than total, collect complete money, if more or equal it, proceed
+
+3. Compute total, discount and VAT of 7.5% of total price.
+- display customers invoice
+- proceed to print the calculated subtotal calculated if no
+- proceed to print the calculated discount user will get if no
+- proceed to print the calculated vat @ 17.50%
+- proceed to print the calculated bill total 
+- display amount paid
+- display balance from payment and total.
+- print "thank you for your patronage"
