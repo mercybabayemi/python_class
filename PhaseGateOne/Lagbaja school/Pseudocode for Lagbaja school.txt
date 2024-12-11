@@ -1,0 +1,23 @@
+Pseudocode for Lagbaja school
+
+- Display welcome message
+- Prompt user to enter their name
+1. Ask the teacher for the number of students.
+- Prompt teacher for number of students
+- Collect and store as numberOfStudents
+2. Ask the teacher for the number of subjects.
+ - Prompt teacher for student subject
+- Collect and store as studentSubjects
+3. Collect the scores for every students and every subjects.
+- Declare a multidimensional array with the student as its row and subject as its column.
+- Assign array size declared to name studentGrade
+- Loop through the index of student and subject . Collect the score for each subject and fix in the column of array.
+4. Constraint: Score must be between 0 and 100.
+- while score input is less than 0 or greater than 100, display invalid score and prompt again
+5. Display class summary after input collection.
+- In a tabular format , display header and index + 1 with the score content
+- For each subject which is the related index in all nested loop, calculate and display the maximum/highest scoring student and minimum/lowest scoring student.
+- Calculate and display the total score
+- print the best graduating student
+- Calculate and display the average score 
+- Calculate number of passes and fails.
