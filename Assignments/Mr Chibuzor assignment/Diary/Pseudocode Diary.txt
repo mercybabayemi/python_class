@@ -1,0 +1,115 @@
+Pseudocode Diary.
+
+Note: 
+- User or actor associates with :
+	Create diary
+	Lock diary
+	Unlock diary
+	Add entry
+	Find entry by id
+	Delete entry
+	Update entry
+- Add entry include unlocking the diary
+  Find entry include adding the entry
+  Delete entry include adding the entry 
+  Update entry include adding the entry
+
+Stage 1
+Create the Diary Class.
+- In diary class, declare instance variable int diaryId, String diaryDate, String diaryContent.
+- Create a constructor taking the instance variables parameters.
+- Declare and initialize the instance variables to the variable name.
+- Declare setters and getters for each instance variable.
+
+
+Lock And Unlock Diary.
+- Declare a boolean isLocked to the private instance variables.
+- In diary class, create a function to lock diary taking no parameter.
+- Set isLocked to true.
+- Create a function to unlock diary taking no parameter.
+- Set isLocked to false.
+- Create a function isLocked to return the Boolean value of isLocked.
+
+Add Entry.
+- Create DiaryMain class and declare main method
+- In main method, import ArrayList.
+- Declare and initialize ArrayList to store diary object entry using the object reference type.
+- Import Scanner and create an object Scanner to receive inputs.
+- Prompt if user wants to create a new diary, and collect input in diaryDeterminant
+- Create a static function addDiary belongiong to DiaryMain class receiving the parameter Scanner input and ArrayList diaries and returning void.
+- Prompt user to enter diary id.
+- Collect and store input as diaryId.
+- Consume new line leftover.
+- Prompt user to enter diary date.
+- Collect and store input as diaryDate.
+- Prompt user to enter diary content.
+- Collect and store input as diaryContent.
+- Create a diary entry object taking type Diary class and its constructors.
+- Add entry to arraylist.
+
+Implementing Lock And Unlock Diary.
+- Prompt if user wants to lock diary or unlock diary
+- Collect and save response as lockResponse.
+- If user wants to lock, display "The diary is now locked."
+- If not, display "The diary is now unlocked."
+
+ViewDiaries.
+- In DiaryMain class, create a static function viewDiaries returning void and taking parameter ArrayList diaries.
+- Display "Displaying all diary entries:".
+- if ArrayList diaries is empty, display "No diary entries found."
+- if not, loop through each entry in diaries and print out the id, date and content in each loop.
+
+Update Entry.
+- In Diary class, create function updateDiaryId taking parameter newId and returning void
+- Set this variable diaryId to newId.
+- create function updateDiaryDate taking parameter newDate and returning void
+- Set this variable diaryDate to newDate.
+- create function updateDiaryContent taking parameter newContent and returning void
+- Set this variable diaryContent to newContent.
+
+- In the DiaryMain class, create an update diary id function taking int id and newId parameter , returning void.
+- Prompt user to enter diary Id to update 
+- Collect and save it as diaryId
+- Consume leftover nextLine
+- Initialise an object of type Diary and name diaryToUpdate to null. This will take the specific entry later.
+- Loop through each entry to check for diaryId. if element at each index.getDiaryId matches the diaryId entered earlier, diaryToUpdate = that entry and we return .
+- If diaryToUpdate is still null, display "Diary entry not found!"
+- else prompt user for new Id 
+- Collect and save as newId
+- Consume line.
+- Prompt user for new date
+- Collect and save as newDate
+- Prompt user for new content.
+- Collect and save as newContent.
+- Call the existing object diaryToUpdate and updateDiaryId and pass newId into it.
+- Call the existing object diaryToUpdate and updateDiaryDate and pass newDate into it.
+- Call the existing object diaryToUpdate and updateDiaryContent and pass newContent into it.
+
+Delete Entry.
+- In the DiaryMain class, create a deleteDiary function taking Scanner input and ArrayList diaries as parameter and returning void.
+- Prompt user to enter the diary id to remove.
+- Collect and save as diaryId
+- Declare diaryToRemove variable of type Diary and assign it to null. This will collect the specific entry we want to remove.
+- Iterate through each entry in diaries 
+- if entry DiaryId is the same as the entered diary id, diaryToRemove = entry and break from iteration.
+if diaryToRemove is till null, display "Diary entry not found."
+- Else call the arraylist variables diaries and remove diarytoremove from it
+- Display "Diary entry removed successfully!"
+
+
+Main method display
+- In main method, set a control flow that if the diarydeterminant collected earlier is equal yes, perform these:
+	-  display welcome message
+	- Prompt user for choice to add new diary, view diary entries, update diary entries, delete diary entries or exit
+	- If choice is 1, call the addDiary function
+	- If choice is 2, call the viewDiaries function
+	- If choice is 3, call the updateDiary function
+	- If choice is 4, call the deleteDiary functions
+	- If choice is 5, display "Exiting>>>>"
+	- If choice is invalid, "Invalid choice!!!\nPlease try again and enter right value: "
+	- Collect and save input as response
+- Prompt if user still wants to create a new diary
+- Collect and store result to diaryDeterminant
+- If yes, repeat the control flow, if no, exit flow.
+
+
