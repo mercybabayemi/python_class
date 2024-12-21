@@ -16,7 +16,7 @@ def view_diaries():
 			print(f"Diary ID: {entry["diary_id"]}\nDate: {entry["diary_date"]}\nContent: {entry["diary_content"]}\nLocked: {entry["is_locked"]}\n")
 
 
-def updateDiary(diary_id, new_id = None, new_date = None, new_content = None):
+def update_diary(diary_id, new_id = None, new_date = None, new_content = None):
 	for entry in diaries:
 		if entry["diary_id"] == diary_id:
 			if new_id is not None:
@@ -74,7 +74,7 @@ while diary_determinant.casefold() == "yes":
 
 			new_id = int(new_id_input) if new_id_input else None
 
-			updateDiary(diary_id, new_id, new_date, new_content)
+			update_diary(diary_id, new_id, new_date, new_content)
 		case 4:
 			diary_id = int(input("Enter the diary ID to update: "))
 			delete_diary(diary_id)
