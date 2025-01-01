@@ -1,0 +1,18 @@
+Pseudocode valid credit card validator
+- Prompt user to enter their card details to verify
+- check if number input is between 13 and 16 digits 
+- Check if card number follow a certain pattern:
+4 for VisaCard
+5 for MasterCard
+37 for American Express Cards
+6 for Discover Cards
+
+- Check for validity 
+- for numbers in even position
+- Loop in reverse and multiply number by 2. 
+- If number is greater than 9, remove digit and sum, 
+- Add number in even position
+- Repeat process for numbers in odd position
+- Add numbers in odd position
+- Sum up results
+- if result is divisible by 10 with no remainder, number is valid
