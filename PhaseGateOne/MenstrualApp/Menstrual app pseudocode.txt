@@ -1,0 +1,27 @@
+Menstrual app pseudocode
+- Display welcome message
+- Display introductory message
+- Prompt for users name
+- prompt for users age
+- Prompt user for the start date of last period and start date of current period(Cycle length/flow date is the number of days between the first day of one period and the first day of the next period)
+- Compare result from last start date to current start date
+
+check for these edgecases in cycle date....
+- Polymenorrhea: Cycle length less than 21 days
+- Oligomenorrhea: Cycle length more than 35 days but less than 90 days
+- Amenorrhea: No menstrual cycle or cycle length more than 90 days
+- Hypermenorrhea: Cycle length less than 18 days
+This is the flow date.
+
+- Prompt for user's last menstrual period(The first day of the last menstrual period)
+- period usually last 3 to 7, so calculate next menstrual period with last menstrual period + cycle length
+- Calculate ovulation date (occurs around Day 14 of a 28-day cycle) by subtracting 14 from the cycle length
+- Calculate safe period also known as fertile window(ovulation and pregnancy occur)(5-7 days before ovulation and 1-2 days after ovulation).
+- Calculate luteal phase start date(around Day 15 of a 28-day cycle). calculate the luteal phase start date, add 14 to the last menstrual period(LMP)
+
+-print caution message: Keep in mind that these calculations are estimates and can vary from woman to woman. Factors like stress, weight changes, and certain medical conditions can affect menstrual cycle regularity and ovulation timing.
+
+Note:
+1. Menstruation (Days 1-5): The uterus sheds its lining, resulting in bleeding (menstruation).
+2. Follicular Phase (Days 6-14): The body produces follicle-stimulating hormone (FSH), which stimulates the growth of follicles in the ovaries. These follicles produce estrogen, causing the uterine lining to thicken.Follicle Stimulating Hormone (FSH), which stimulates the follicles in your ovaries to mature. FYI — these follicles contain your eggs.
+3. Luteal Phase (Days 15-28): After ovulation, the empty follicle in the ovary produces progesterone, which helps thicken the uterine lining further. If pregnancy doesn't occur, the progesterone levels drop, and the cycle starts again.
