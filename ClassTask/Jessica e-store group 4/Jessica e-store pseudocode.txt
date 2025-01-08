@@ -1,25 +1,33 @@
 Jenniffer e-store pseudocode
+- Build products_catalogue
 
+- create a function of main_menu()
 - prompt user to select from the menu.
-Welcome to Jennifer's E-Store! 
-1. View Products 
-2. Add to Cart 
-3. Remove from Cart 
-4. View Cart 
-5. Checkout 
-6. Exit 
-- collect and store as menu
+	Welcome to Jennifer's E-Store! 
+	1. View Products 
+	2. Add to Cart 
+	3. Remove from Cart 
+	4. View Cart 
+	5. Checkout 
+	6. Exit 
+- print cart length and apply choice
 
-- if user enters 1 for menu, display product catalogue.
-- create a function for this and call it get_view_product.
-1. Laptop - $1000
-2. Phone - $500
-3. Headphones - $100
-- create a function for this and call it get_view_product.
+
+- Display product catalogue.
+- create a function for this and call it get_view_products.
+- loop through the index of length of products 
+- print products
+-  ask if user want to go back to main menu or exit
+- add products below to a variable called products_catalogue
+	1. Laptop - $1000
+	2. Phone - $500
+	3. Headphones - $100
 
 -  create a function: add_to_cart(cart, products) 
-- Add product to shopping cart
-- Confirm addition with "(product) has been added to your cart."
+- display product
+- prompt user for response
+- Append product to shopping cart by index and response
+- Confirm addition by printing "(product) has been added to your cart."
 
 - create a function: remove_from_cart(cart)
 - remove item

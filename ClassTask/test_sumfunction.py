@@ -1,5 +1,5 @@
 from unittest import TestCase
-import sumfunction
+import sumfunctiondiary
 
 class TestSumFunction(TestCase):
 	def test_that_function_exists(self):
