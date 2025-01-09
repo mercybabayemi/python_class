@@ -6,7 +6,7 @@ class TestIndexFunction(TestCase):
 		input = [12,17,24,32,14]
 		getindex.get_index(input, 24)
 
-	def test_that_cube_function_return_correct_value(self):
+	def test_that_index_function_return_correct_value(self):
 		input = [12,17,24,32,14]
 		actual = getindex.get_index(input, 24)
 		expected = 2
