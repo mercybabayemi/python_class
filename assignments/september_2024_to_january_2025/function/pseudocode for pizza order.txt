@@ -1,0 +1,31 @@
+pseudocode for pizza order
+- Display a welcome message
+- Prompt user to enter their name
+- collect and store as name
+- assign all the pizza type available to string array pizza type
+- assign the number of slices for each pizzatype to int array numberOfSlices
+- assign each price of pizza type per box to int array pricePerBox
+1. How many boxes of pizza the user will buy (You should assume that every birthday guest will eat 1 slice of
+pizza)
+- determine the number of box user will get while iterating over once, number of box to buy is slices to consider divided by  number of slices at index of pizza type choosing - 1.
+- if slices to consider modulo number of slices at index of pizza type choosing - 1 is not equal to 0, increment number of box by 1
+2. How many slices will be left over after all his/her guest have been served
+- Slices to consider modulo number of slices at index of pizza type choosing - 1 is the number of slices leftover
+3. How much the customer has to pay for it
+- determined price per box at the index of pizza type choosing multiplied by the number of box
+
+public static int getNumberOfPizzaBoxToBuy(int numberOfPeople, int[] numberOfSlices,int pizzaTypeChoosing){
+		double numberOfBox = number0fPeople / numberOfSlices[pizzaTypeChoosing - 1];
+		return numberOfBox;
+	}
+
+	public static int getNumberOfPizzaBoxToBuy(int pizzaTypeChoice, int numberOfPeople, int[] numberOfSlices){
+		int count = 0;
+		int numberOfBox = 0;
+		for(int index = 0; index <= numberOfSlices.length; index++){
+			if(number0fPeople % numberofslices[pizzaTypeChoice] > 0){
+				numberOfBox++;
+				count++;
+			}
+		}
+		return numberOfBox;
