@@ -5,16 +5,23 @@ from account import Account
 
 class AccountTest(unittest.TestCase):
     def setUp(self):
-        self.account = Account("mercy", "Jane", "1234")
+        self.account = Account("Mercy", "Jane", "1234")
 
     def test_account_exists(self):
-        self.assertEqual(self.account.get_account_number(), 0)
-        self.assertEqual(self.account.get_first_name(), "mercy")
-        self.assertEqual(self.account.get_last_name(), "Jane")
+        self.assertEqual(self.account._account_number, 0)
+        self.assertEqual(self.account._first_name, "Mercy")
+        self.assertEqual(self.account._last_name, "Jane")
 
     def test_account_first_name_updates(self):
-        self.account.update_first_name("mercy", "Mary")
-        self.assertEqual(self.account.get_first_name(), "Mary")
+        self.account.update_first_name("Mercy", "Mary")
+        self.assertEqual(self.account._first_name, "Mary")
+
+    def test_that_updates_first_name_throws_exception(self):
+        with self.assertRaises(ValueError):
+            self.account.update_first_name("mercy", "Jane")
+
+        with self.assertRaises(ValueError):
+            self.account.update_first_name("", "Jane")
 
     def test_account_deposits_successfully(self):
         self.account.deposit(5000)
