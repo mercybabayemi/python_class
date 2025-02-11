@@ -4,8 +4,7 @@ from account import Account
 
 
 class Bank:
-    def __init__(self, account: Account):
-        self.account = account
+    def __init__(self):
         self._accounts = []
         self._account_count = 0
 

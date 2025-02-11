@@ -6,7 +6,7 @@ from bank import Bank
 
 class TestBank(unittest.TestCase):
     def setUp(self):
-        self.bank = Bank(Account("Mercy", "Janet", "1234"))
+        self.bank = Bank()
 
     def test_bank_accounts_empty(self):
         self.assertTrue(self.bank.is_accounts_empty())
@@ -61,3 +61,6 @@ class TestBank(unittest.TestCase):
         account1 = self.bank.create_account("Mercy", "Janet", "1234")
         with self.assertRaises(ValueError):
             self.bank.transfer(account1, account1, 2000, "1234")
+
+if __name__ == "__main__":
+    unittest.main()

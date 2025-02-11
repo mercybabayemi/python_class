@@ -1,8 +1,9 @@
+from account import Account
 from bank import Bank
 
 
 def main_menu():
-    bank = Bank()
+    bank = Bank(Account("Mercy", "Janet", "1234"))
     menu(bank)
 
 

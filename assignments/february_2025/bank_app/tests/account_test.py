@@ -76,3 +76,6 @@ class AccountTest(unittest.TestCase):
     def test_account_get_account_number_returns_correct_value(self):
         self.account.deposit(500)
         self.assertEqual(self.account.get_account_number(), 0)
+
+if __name__ == "__main__":
+    unittest.main()

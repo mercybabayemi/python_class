@@ -51,6 +51,6 @@ class Account:
     def __str__(self):
         return f"Account Name: {self._first_name} {self._last_name}\nAccount Balance: {self._balance}\nAccount Number: {self._account_number}"
 
-    def set_account_number(self, account_number):
+    def set_account_number(self, account_number: int) -> None:
         self._account_number = account_number
     

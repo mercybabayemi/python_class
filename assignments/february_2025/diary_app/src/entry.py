@@ -1,6 +1,8 @@
+from datetime import date
+
 class Entry:
-    def __init__(self, entry_id, title, body):
-        self.id = entry_id
+    def __init__(self, id, title, body):
+        self.id = id
         self.title = title
         self.body = body
         self.date_created = date.today()
@@ -21,4 +23,4 @@ class Entry:
         return self.body
 
     def __str__(self):
-        return f"ID: {self.id}\nTitle: {self.title}\nBody: {self.body}\nDateCreated: {self.date_created}"
+        return f"Entry:\nID: {self.id},\nTitle: {self.title},\nBody: {self.body},\nDateCreated: {self.date_created}"
