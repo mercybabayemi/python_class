@@ -5,6 +5,18 @@ class Tv:
         self._channel_level = 0
         self._previous_volume_level = 0
 
+    @property
+    def get_volume(self):
+        return self._volume_level
+
+    @property
+    def get_channel(self):
+        return self._channel_level
+
+    @property
+    def get_is_on(self):
+        return self._is_on
+
     def turn_on(self) -> bool:
         self._is_on = True
         return self._is_on
