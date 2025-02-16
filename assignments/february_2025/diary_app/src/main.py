@@ -170,7 +170,7 @@ class Main:
         try:
             self.diary.view_entry(entry_id)
         except Exception as e:
-            print(e)
+            print("Diary entry not found")
         self.diary_entry_menu(self.diary)
 
     def view_entries(self):
@@ -187,6 +187,7 @@ class Main:
         self.diary_entry_menu(self.diary)
 
     def create_entry(self):
+        self.validate_lock_and_unlock_diary()
         title = self.validate_string_input("Enter title: ")
         body = self.validate_string_input("Enter body: ")
         entry_id = self.diary.create_entry(title, body)
