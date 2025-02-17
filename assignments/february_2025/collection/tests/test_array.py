@@ -28,6 +28,7 @@ class TestArrayMethod(unittest.TestCase):
         self.array.add("second_example")
         self.array.add_at_index(1, "replacement_example")
         self.assertEqual(self.array.get(1), "replacement_example")
+        self.assertEqual(len(self.array), 3)
 
     def test_add_at_index_out_of_bound(self):
         self.array.add("first_example")
