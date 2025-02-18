@@ -12,7 +12,13 @@ def encrypt_text(text):
                 encrypted_char = chr(encrypted_char_calculated)
                 encrypted += encrypted_char
             elif letter.isdigit():
-                base = "1"
+                base = "0"
+                encrypted_char_calculated = (ord(letter) - ord(base) + 13 + 9)% 9 + ord(base)
+                encrypted_char = chr(encrypted_char_calculated)
+                encrypted += encrypted_char
+            else:
                 encrypted += letter
+
     return encrypted
 
+print(encrypt_text("Mercy 12 .3"))
