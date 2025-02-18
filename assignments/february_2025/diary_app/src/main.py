@@ -1,7 +1,5 @@
 import sys
-
 from diaries import Diaries
-
 
 class Main:
     def __init__(self):
@@ -73,8 +71,6 @@ class Main:
             existing_diary = self.diaries.find_by_username(username)
             if existing_diary.get_is_locked():
                 existing_diary.unlock_diary(password)
-                # print("Login successful!")
-                # print("Incorrect password!")
             self.diary = existing_diary
             self.diary_entry_menu(existing_diary)
         except Exception as e:
@@ -116,9 +112,15 @@ class Main:
             self.delete_entry()
         elif choice == 6:
             self.lock_entry()
+        elif choice == 7:
+            self.logout()
         else:
             print("Invalid choice. Please try again.")
             self.diary_choice()
+
+    def logout(self):
+        print("Logging out>>>")
+        self.main_menu()
 
     def validate_lock_and_unlock_diary(self):
         while self.diary.get_is_locked():

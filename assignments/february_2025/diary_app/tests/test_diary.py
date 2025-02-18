@@ -10,7 +10,7 @@ class TestDiary(unittest.TestCase):
 
     def test_diary_is_unlocked_when_password_is_correct(self):
         self.diary.unlock_diary("password")
-        self.assertFalse(self.diary.is_locked)
+        self.assertFalse(self.diary.get_is_locked())
 
     def test_diary_is_locked_when_password_is_incorrect(self):
         with self.assertRaises(SecurityError):
@@ -18,7 +18,7 @@ class TestDiary(unittest.TestCase):
 
     def test_diary_is_locked_when_lock_diary_is_used(self):
         self.diary.lock_diary()
-        self.assertTrue(self.diary.is_locked)
+        self.assertTrue(self.diary.get_is_locked())
 
     def test_diary_create_entry_and_add_to_entries(self):
         self.diary.create_entry("Title", "Entry Body")
