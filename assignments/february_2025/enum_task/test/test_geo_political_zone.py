@@ -13,9 +13,6 @@ class TestZones(unittest.TestCase):
 
     def test_state_in_zone(self):
         self.assertTrue(GeoPoliticalZONES.get_state(self, "Kaduna"))
-
-    def test_state_in_zone(self):
-        self.assertTrue(GeoPoliticalZONES.get_state(self, "Kaduna"))
         self.assertFalse(GeoPoliticalZONES.get_state(self, "Gone"))
 
 
