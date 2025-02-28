@@ -1,9 +1,9 @@
 from players import Players
 
 class Tictactoe:
-    def __init__(self, board_capacity = 3):
-        self.__board_capacity = board_capacity
-        self.__board = [[' ' for i in range(board_capacity)] for i in range(board_capacity)]
+    def __init__(self):
+        self.__board_capacity = 3
+        self.__board = [[' ' for i in range(self.__board_capacity)] for i in range(self.__board_capacity)]
         self.__mark_board = ''
         self.__isPlayer = False
         self.__players = Players.PLAYER1
