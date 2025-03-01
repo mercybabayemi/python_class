@@ -134,12 +134,50 @@ class TictactoeTest(unittest.TestCase):
          "-----------\n"
          " o | x | o \n"
     )
-
-        print("Actual Board:")
-        print(self.game1.get_mark_board())
-        print("Expected Board:")
-        print(expected_board)
         self.assertEqual(self.game1.get_mark_board(), expected_board)
+
+    def testThat_board_checks_if_any_player_wins(self):
+        self.assertFalse(self.game1.get_is_players())
+
+        self.game1.collect_user_preferred_symbol('x')
+        self.game1.set_is_players()
+        self.assertTrue(self.game1.get_is_players())
+
+        self.game1.collect_user_preferred_symbol('o')
+
+        self.game1.set_board(0, 0)
+        self.game1.set_is_players()
+
+        self.game1.set_board(0, 2)
+        self.game1.set_is_players()
+
+        self.game1.set_board(1, 0)
+        self.game1.set_is_players()
+
+        self.game1.set_board(1, 1)
+        self.game1.set_is_players()
+
+        self.game1.set_board(1, 2)
+        self.game1.set_is_players()
+
+        self.game1.set_board(2, 0)
+        self.game1.set_is_players()
+
+        self.game1.set_board(2, 1)
+        self.game1.set_is_players()
+
+        self.game1.set_board(2, 2)
+        self.game1.set_is_players()
+
+        expected_board = (
+            " o |   | o \n"
+            "-----------\n"
+            " x | o | x \n"
+            "-----------\n"
+            " o | x | o \n"
+        )
+        self.assertEqual(self.game1.get_mark_board(), expected_board)
+
 
 if __name__ == '__main__':
     unittest.main()

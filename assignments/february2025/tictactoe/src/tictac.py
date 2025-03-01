@@ -1,7 +1,9 @@
 from players import Players
 
 class Tictactoe:
-    def __init__(self):
+    def __init__(self, name1, name2):
+        self.__player_2_name = name2
+        self.__player_1_name = name1
         self.__board_capacity = 3
         self.__board = [[' ' for i in range(self.__board_capacity)] for i in range(self.__board_capacity)]
         self.__mark_board = ''
@@ -9,6 +11,12 @@ class Tictactoe:
         self.__players = Players.PLAYER1
         self.__player_1_marker = 'x'
         self.__player_2_marker = 'o'
+
+    def get_player_1_name(self):
+        return self.__player_1_name
+
+    def get_player_2_name(self):
+        return self.__player_2_name
 
     def get_is_players(self):
         return self.__isPlayer
@@ -79,3 +87,27 @@ class Tictactoe:
 
     def get_board(self):
         return self.__board
+
+    def check_win_condition(self):
+        win_conditions = [
+            (0, 1, 2),
+            (3, 4, 5),
+            (6, 7, 8),
+            (0, 3, 6),
+            (1, 4, 7),
+            (2, 5, 8),
+            (0, 4, 8),
+            (2, 4, 6),
+        ]
+
+        for a,b,c in win_conditions:
+            if {self.__board[a], self.__board[b], self.__board[c]} == self.get_player_1_marker():
+                print(f"{self.get_player_1_name()} is the winner!")
+                return True
+            elif {self.__board[a], self.__board[b], self.__board[c]} == self.get_player_1_marker():
+                print(f"{self.get_player_2_name()} is the winner!")
+                return True
+
+        if " " not in self.__board:
+            print("It' s a tie!")
+            return False
