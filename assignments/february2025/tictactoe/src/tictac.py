@@ -57,10 +57,10 @@ class Tictactoe:
         return self.__player_2_marker
 
     def set_board(self, row, column):
-        value = ''
         if not (0 <= row < self.__board_capacity and 0 <= column < self.__board_capacity):
             raise ValueError("Row and column must be within the bounds of the board.")
 
+        value = ''
         if self.get_player() == Players.PLAYER1:
             value = self.get_player_1_marker()
         elif self.get_player() == Players.PLAYER2:
@@ -100,14 +100,26 @@ class Tictactoe:
             (2, 4, 6),
         ]
 
+        print("Checking win condition...")
+
         for a,b,c in win_conditions:
-            if {self.__board[a], self.__board[b], self.__board[c]} == self.get_player_1_marker():
-                print(f"{self.get_player_1_name()} is the winner!")
-                return True
-            elif {self.__board[a], self.__board[b], self.__board[c]} == self.get_player_1_marker():
-                print(f"{self.get_player_2_name()} is the winner!")
+            if self.__mark_board[a] == self.__mark_board[b] == self.__mark_board[c] is not None:
+                if self.__mark_board[a] == self.get_player_1_marker():
+                    print(f"{self.get_player_1_name()} is the winner!")
+                else:
+                    print(f"{self.get_player_2_name()} is the winner!")
                 return True
 
-        if " " not in self.__board:
+        if " " not in self.__mark_board:
             print("It' s a tie!")
             return False
+
+
+
+    def make_move(self, row, col):
+        if self.__board[row][col] == ' ':
+            self.set_board(row, col)
+            if not self.check_win_condition():
+                self.set_is_players()
+        else:
+            print("Invalid move! The cell is already taken.")

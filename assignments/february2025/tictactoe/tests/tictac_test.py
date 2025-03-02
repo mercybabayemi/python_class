@@ -6,7 +6,7 @@ from players import Players
 class TictactoeTest(unittest.TestCase):
 
     def setUp(self):
-        self.game1 = Tictactoe()
+        self.game1 = Tictactoe("john", "Mary")
 
     def test_that_game_has_a_board_and_it_is_initialised_with_empty_strings(self):
         expecting = [[' ' for i in range(3)] for i in range(3)]
@@ -163,21 +163,16 @@ class TictactoeTest(unittest.TestCase):
         self.game1.set_board(2, 0)
         self.game1.set_is_players()
 
-        self.game1.set_board(2, 1)
-        self.game1.set_is_players()
-
-        self.game1.set_board(2, 2)
-        self.game1.set_is_players()
 
         expected_board = (
-            " o |   | o \n"
-            "-----------\n"
-            " x | o | x \n"
+            " o |   | x \n"
             "-----------\n"
             " o | x | o \n"
+            "-----------\n"
+            " x |   |   \n"
         )
         self.assertEqual(self.game1.get_mark_board(), expected_board)
-
+        self.assertTrue(self.game1.check_win_condition())
 
 if __name__ == '__main__':
     unittest.main()
