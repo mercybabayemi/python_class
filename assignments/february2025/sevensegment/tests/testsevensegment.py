@@ -7,7 +7,7 @@ class TestSevenSegmentDisplay(unittest.TestCase):
     def setUp(self):
         self.display = SevenSegmentDisplay()
 
-    def test_user_inputs_non_digit_numbers(self):
+    def test_user_inputs_non_binary_numbers(self):
         with self.assertRaises(ValueError):
             self.display.display_segment("1234s678")
 

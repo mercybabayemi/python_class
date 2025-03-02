@@ -28,10 +28,12 @@ class SevenSegmentDisplay:
     def set_board(self, digits):
 
         if digits[0] == '1':
-            self.__board[0][0] = '#'
-            self.__board[0][1] = '#'
-            self.__board[0][2] = '#'
-            self.__board[0][3] = '#'
+            for i in range(4):
+                self.__board[0][i] = "#"
+            # self.__board[0][0] = '#'
+            # self.__board[0][1] = '#'
+            # self.__board[0][2] = '#'
+            # self.__board[0][3] = '#'
 
         if digits[1] == '1' and digits[2] == '1':
             self.__board[1][3] = '#'
