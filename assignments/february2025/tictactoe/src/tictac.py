@@ -114,6 +114,7 @@ class Tictactoe:
             print("It' s a tie!")
             return False
 
+        return False
 
 
     def make_move(self, row, col):
