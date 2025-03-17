@@ -1,8 +1,5 @@
-import unittest
-
-
 from system import System
-
+import unittest
 
 class MyTestCase(unittest.TestCase):
     def setUp(self):
@@ -10,8 +7,8 @@ class MyTestCase(unittest.TestCase):
 
     def test_that_system_adds_a_movie_as_dictionary_in_movies(self):
         self.system.add_movie('Movie A')
-        self.assertIn('Movie A', self.system.get_movie('Movie A'))
-        self.assertIn('Movie A', self.system.get_movie_by_id(1))
+        self.assertIn('Movie A', [movie['title'] for movie in self.system.movies.values()])
+        self.assertIn('movie1', self.system.movies)
 
     def test_that_system_throws_exception_if_movie_name_was_already_added(self):
         self.system.add_movie('Movie A')
@@ -43,7 +40,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(4, self.system.get_movie_rating('Movie B'))
         self.assertEqual(2, self.system.get_movie_rating('Movie A'))
         self.assertEqual(3.0, self.system.get_movie_average_rating('Movie A'))
-        self.assertEqual(3.3333333333333335, self.system.get_movies_average_rating())
+        self.assertEqual(3.33, self.system.get_movies_average_rating())
 
     def test_that_a_movie_average_throws_exception_when_movies_is_empty(self):
         with self.assertRaises(ValueError):

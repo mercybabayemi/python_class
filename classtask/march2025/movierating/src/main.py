@@ -88,8 +88,8 @@ class Main:
             case "6":
                 print("""
                 Thank you for using the program.
-                We hope you enjoyed the movie.
-                      """)
+                We hope you enjoyed rating the movies.
+                """)
 
     def main_menu(self):
         choice = self.display()
